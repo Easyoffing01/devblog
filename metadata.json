@@ -1,0 +1,6 @@
+{
+  "name": "DevBlog - Open Publication for Technical Builders",
+  "description": "The open publication for modern software engineers, frontend architects, and full-stack builders who value deep technical precision over algorithmic hype.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

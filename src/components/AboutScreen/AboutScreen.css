@@ -1,0 +1,426 @@
+/* AboutScreen.css - Pure CSS Styles */
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 1.5rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manifesto-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--color-surface-container-high);
+  color: var(--color-tertiary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 20px -5px rgba(0, 160, 215, 0.3);
+}
+
+.about-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-on-surface);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.about-subhead {
+  font-size: 1.125rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+}
+
+.about-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* 3 Stat Bento Cards */
+.stats-section {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  position: relative;
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: var(--color-surface-container-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-on-surface);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.35rem;
+}
+
+.stat-desc {
+  font-size: 0.875rem;
+  color: var(--color-on-surface-variant);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.stat-footer-bar {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+}
+
+/* Core Values Section */
+.values-section {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.section-tag-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pillar-card {
+  background-color: var(--color-surface-container-low);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.3);
+}
+
+.pillar-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: var(--color-surface-container-highest);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pillar-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-outline);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pillar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.pillar-desc {
+  font-size: 0.875rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.6;
+}
+
+.pillar-protocol-box {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-surface-container);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.protocol-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: block;
+}
+
+.protocol-text {
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* Core Team Section */
+.team-section {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+}
+
+.team-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.team-stats-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-outline);
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.team-member-card {
+  background-color: var(--color-surface-container);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px -10px rgba(0, 0, 0, 0.4);
+}
+
+.team-avatar-wrapper {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 1rem;
+}
+
+.team-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(99, 102, 241, 0.25);
+}
+
+.team-avatar-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--color-surface-dim);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team-text-area {
+  text-align: center;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-on-surface);
+}
+
+.team-role {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.team-bio {
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.team-social-footer {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(34, 42, 61, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.team-social-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-on-surface-variant);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.team-social-link:hover {
+  color: var(--color-primary);
+}
+
+/* Community Join Banner */
+.community-cta-section {
+  width: 100%;
+  padding: 0 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
+
+.community-cta-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--color-surface-container-low), var(--color-surface-container));
+  border: 1px solid var(--border-color);
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .stats-grid, .values-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-title {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-title {
+    font-size: 2.25rem;
+  }
+  .community-cta-card {
+    padding: 2rem;
+  }
+}
